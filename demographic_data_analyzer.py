@@ -14,7 +14,6 @@ def calculate_demographic_data():
     percentage_bachelors = a['Bachelors'] / len(df) * 100
     print('Percentage of people who have a Bachelor degree: ', percentage_bachelors)
 
-
     a = df['education'].value_counts()
     higher_education = (a['Bachelors'] + a['Masters'] +
                         a['Doctorate']) / len(df) * 100
